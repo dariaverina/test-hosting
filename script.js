@@ -1,4 +1,4 @@
-document.getElementById('eventButton').addEventListener('click', function() {
+document.getElementById('jsButton').addEventListener('click', function() {
     if (typeof roistat !== 'undefined' && roistat.event && roistat.event.send) {
         roistat.event.send("eventButton", {
             "value": "123"
