@@ -1,6 +1,6 @@
 document.getElementById('eventButton').addEventListener('click', function() {
     if (typeof roistat !== 'undefined' && roistat.event && roistat.event.send) {
-        roistat.event.send("Событие с сайта", {
+        roistat.event.send("eventButton", {
             "value": "123"
         });
         alert('Событие отправлено!');
